@@ -4,7 +4,7 @@ const upload = require('multer')({ dest: '../../uploads' });
 const { uploadArquivo } = require('../controllers/uploadController');
 
 router.post('/', upload.single('arquivo'), uploadArquivo);
-router.get('/pedido/:id', getOrderById);
-router.get('/intervaloCompra/:periodo', getIntervaloCompra);
+//router.get('/pedido/:id', getOrderById);
+//router.get('/intervaloCompra/:periodo', getIntervaloCompra);
 
 module.exports = router;
